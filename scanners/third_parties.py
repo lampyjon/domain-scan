@@ -45,9 +45,6 @@ workers = 10
 #
 ######################################
 
-# TODO: Start using regexes.
-# TODO: After adding regexes, have this be ordered, some
-# rules should take precedence over others.
 known_services = {
     'Google Analytics': ['www.google-analytics.com'],
     'Google Fonts': [
@@ -131,8 +128,6 @@ def scan(domain, options):
             url = 'http://' + domain
     else:
         url = domain
-
-    # calculated_domain = re.sub("https?:\/\/", "", url)
 
     # We'll cache prettified JSON from the output.
     cache = utils.cache_path(domain, "third_parties")
