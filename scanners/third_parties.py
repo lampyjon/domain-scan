@@ -94,8 +94,6 @@ known_services = {
     'Amazon S3': ['s3.amazonaws.com'],
 }
 
-# TODO: Add URL or header-based flags for other
-# fingerprinted behavior. e.g. non-central DAP reporting.
 
 ######################################
 
@@ -166,8 +164,8 @@ def scan(domain, options):
         services['internal_requests'],
         serialize(services['external']),
         serialize(services['internal']),
-        # services['affiliated'],
-        # services['unknown']
+        # services['affiliated'],  # TODO
+        # services['unknown'],  # TODO
     ] + known_matches
 
 
