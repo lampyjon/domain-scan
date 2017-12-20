@@ -6,13 +6,12 @@ Based on:
 """
 
 from setuptools import setup
-from domain-scan import __version__
 
 setup(
     name='domain-scan',
 
     # Versions should comply with PEP440
-    version=__version__,
+    version="0.0.1",
     description='Scan websites for HTTPS deployment best practices',
 
     # NCATS "homepage"
