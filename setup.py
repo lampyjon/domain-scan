@@ -68,7 +68,7 @@ setup(
 	'six>=1.6',
 
 	# To support pshtt scanner (and to stay fresh):
-	'git+git://github.com/dhs-ncats/pshtt.git#egg=pshtt',
+	'https://github.com/dhs-ncats/pshtt/tarball/master#egg=pshtt',
 
 	# To support sslyze scanner:
 	'sslyze',
