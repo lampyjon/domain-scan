@@ -95,3 +95,4 @@ setup(
             'domain-scan = domain-scan.cli:main',
         ]
     }
+)
