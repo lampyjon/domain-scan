@@ -92,7 +92,7 @@ setup(
     # Conveniently allows one to run the CLI tool as `domain-scan`
     entry_points={
         'console_scripts': [
-            'domain-scan = domain-scan:main',
+            'domain_scan = scan:main',
         ]
     }
 )
