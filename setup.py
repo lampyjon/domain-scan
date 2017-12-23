@@ -83,7 +83,7 @@ setup(
 
     dependency_links=[
       'git+ssh://git@github.com/dhs-ncats/pshtt/tarball/master#egg=pshtt-0.4.0-dev',
-    ]
+    ],
 
     extras_require={
         # 'dev': ['check-manifest'],
