@@ -68,8 +68,8 @@ setup(
 	'six>=1.6',
 
 	# To support pshtt scanner (and to stay fresh):
-	'https://github.com/dhs-ncats/pshtt/tarball/master#egg=pshtt',
-
+        'pshtt==0.4.0-dev',
+	
 	# To support sslyze scanner:
 	'sslyze',
 	'cryptography',
@@ -80,6 +80,10 @@ setup(
 	# For Lambda support (only used locally):
 	'boto3'
       ],
+
+    dependency_links=[
+      'git+ssh://git@github.com/dhs-ncats/pshtt/tarball/master#egg=pshtt-0.4.0-dev',
+    ]
 
     extras_require={
         # 'dev': ['check-manifest'],
